@@ -1,0 +1,15 @@
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\bin\Debug\net7.0\Shop.DomainDTO.deps.json
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\bin\Debug\net7.0\Shop.DomainDTO.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\bin\Debug\net7.0\Shop.DomainDTO.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\bin\Debug\net7.0\Shop.DomainInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\bin\Debug\net7.0\Shop.DomainInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.csproj.AssemblyReference.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.GeneratedMSBuildEditorConfig.editorconfig
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.AssemblyInfoInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.AssemblyInfo.cs
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.csproj.CoreCompileInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.csproj.CopyComplete
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\refint\Shop.DomainDTO.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\Shop.DomainDTO.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainDTO\obj\Debug\net7.0\ref\Shop.DomainDTO.dll

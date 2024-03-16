@@ -1,0 +1,17 @@
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.ServicesInterfaces.deps.json
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.ServicesInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.ServicesInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.DomainInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.DomainInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.csproj.AssemblyReference.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.AssemblyInfoInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.AssemblyInfo.cs
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.csproj.CoreCompileInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.csproj.CopyComplete
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\refint\Shop.ServicesInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\Shop.ServicesInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\obj\Debug\net7.0\ref\Shop.ServicesInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.DomainDTO.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.ServicesInterfaces\bin\Debug\net7.0\Shop.DomainDTO.pdb

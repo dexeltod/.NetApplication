@@ -1,0 +1,17 @@
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DataBase.deps.json
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DataBase.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DataBase.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DomainInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DomainInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.csproj.AssemblyReference.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.AssemblyInfoInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.AssemblyInfo.cs
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.csproj.CoreCompileInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.csproj.CopyComplete
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\refint\Shop.DataBase.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\Shop.DataBase.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\obj\Debug\net7.0\ref\Shop.DataBase.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DomainDTO.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DataBase\bin\Debug\net7.0\Shop.DomainDTO.pdb

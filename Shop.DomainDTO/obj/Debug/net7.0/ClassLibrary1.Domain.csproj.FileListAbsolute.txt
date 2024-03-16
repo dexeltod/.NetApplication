@@ -1,0 +1,12 @@
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\bin\Debug\net7.0\ClassLibrary1.Domain.deps.json
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\bin\Debug\net7.0\ClassLibrary1.Domain.dll
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\bin\Debug\net7.0\ClassLibrary1.Domain.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.csproj.AssemblyReference.cache
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.AssemblyInfoInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.AssemblyInfo.cs
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.csproj.CoreCompileInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.dll
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\refint\ClassLibrary1.Domain.dll
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ClassLibrary1.Domain.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\ClassLibrary1.Domain\obj\Debug\net7.0\ref\ClassLibrary1.Domain.dll

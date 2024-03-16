@@ -1,0 +1,12 @@
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\bin\Debug\net7.0\Shop.DomainInterfaces.deps.json
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\bin\Debug\net7.0\Shop.DomainInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\bin\Debug\net7.0\Shop.DomainInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.csproj.AssemblyReference.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.AssemblyInfoInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.AssemblyInfo.cs
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.csproj.CoreCompileInputs.cache
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\refint\Shop.DomainInterfaces.dll
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\Shop.DomainInterfaces.pdb
+F:\_projects\C#\dotNetCore\WebApplication2\Shop.DomainInterfaces\obj\Debug\net7.0\ref\Shop.DomainInterfaces.dll
