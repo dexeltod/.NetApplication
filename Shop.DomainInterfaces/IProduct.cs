@@ -1,9 +1,12 @@
-namespace ClassLibrary1.Domain;
+namespace Shop.DomainInterfaces;
 
 public interface IProduct
 {
-	Guid Id { get; }
-	string Name { get; }
-	decimal Price { get; }
-	string? Description { get; }
+	public Guid Id { get; set; }
+
+	public string Name { get; set; }
+
+	public decimal Price { get; set; }
+
+	public string? Description { get; set; }
 }

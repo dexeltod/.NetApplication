@@ -1,13 +1,10 @@
-﻿using ClassLibrary1.Domain;
+﻿using Shop.DomainInterfaces;
 
 namespace Shop.Domain;
 
-public class ProductsModel : IProducts
+public class ProductsModel(List<IProduct> products) : IProducts
 {
-	private readonly List<IProduct> _products;
-
-	public ProductsModel(List<IProduct> products) =>
-		_products = products ?? throw new ArgumentNullException(nameof(products));
+	private readonly List<IProduct> _products = products ?? throw new ArgumentNullException(nameof(products));
 
 	public void Add(IProduct product)
 	{

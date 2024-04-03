@@ -1,62 +1,61 @@
-﻿using ClassLibrary1.Domain;
-using Microsoft.EntityFrameworkCore;
-using Shop.DataBase;
+﻿using Microsoft.EntityFrameworkCore;
+using Shop.Services.Repositoryes.Common;
+using Shop.ServicesInterfaces;
+using WebApplication2.Models;
 
-namespace Shop.Services;
+namespace Shop.Services.Repositoryes;
 
-public class ProductsRepository : Repository<Product>, IProductsRepository
+public class ProductsRepository(WebApplicationContext context) : Repository<Product>(context), IProductsRepository
 {
-	private readonly ProductsContext _context;
-
-	public ProductsRepository(ProductsContext context) =>
-		_context = context ?? throw new ArgumentNullException(nameof(context));
-
-	public override async Task Add(Product product)
+	public override async Task Add(Product target)
 	{
-		if (product == null) throw new ArgumentNullException(nameof(product));
+		ArgumentNullException.ThrowIfNull(target);
 
-		await _context.Products.AddAsync(product);
-		await _context.SaveChangesAsync();
+		await Context.Products.AddAsync(target);
+		await Context.SaveChangesAsync();
 	}
 
 	public override async Task<Product> GetById(Guid id)
 	{
-		List<Product> products = await _context.Products.AsNoTracking().ToListAsync();
+		List<Product> products = await Context.Products.AsNoTracking().ToListAsync();
 
-		Product? a = products.FirstOrDefault(x => x.Id == id);
+		Product? product = products.FirstOrDefault(x => x.Id == id);
 
-		if (a != null)
-			return a;
+		if (product != null)
+			return product;
 
-		throw new ArgumentNullException($"product with if {id} does not exist");
+		throw new ArgumentNullException($"@target with if {id} does not exist");
 	}
 
 	public override async Task<Guid> Remove(Guid id)
 	{
-		var product = _context.Products.Where(x => x.Id == id) ??
-			throw new ArgumentNullException($"product with id {id} does not exist");
+		var product = Context.Products.Where(x => x.Id == id) ??
+			throw new ArgumentNullException($"@target with id {id} does not exist");
 
 		await product.ExecuteDeleteAsync();
 
-		await _context.SaveChangesAsync();
+		await Context.SaveChangesAsync();
 
 		return id;
 	}
 
 	public override async Task<List<Product>> GetAll()
 	{
-		List<Product> products = await _context.Products.AsNoTracking().ToListAsync();
+		List<Product> products = await Context.Products.AsNoTracking().ToListAsync();
 
-		if (products != null)
-			return products;
+		if (products == null)
+			throw new ArgumentNullException($"{products}");
 
-		throw new ArgumentNullException($"{products}");
+		return products;
 	}
+
+	public override Task<List<Product>> GetByCount(int count) =>
+		throw new NotImplementedException();
 
 	public override async Task<Guid> Edit(Product product)
 	{
-		IQueryable<Product> foundProduct = _context.Products.Where(x => x.Id == product.Id) ??
-			throw new ArgumentNullException($"product {product} does not exist");
+		IQueryable<Product> foundProduct = Context.Products.Where(x => x.Id == product.Id) ??
+			throw new ArgumentNullException($"@target {product} does not exist");
 
 		await foundProduct.ExecuteUpdateAsync(
 			s => s.SetProperty(v => v.Name, product.Name)

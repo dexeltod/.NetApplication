@@ -1,6 +1,4 @@
-using ClassLibrary1.Domain;
-
-namespace Shop.Domain;
+namespace Shop.DomainInterfaces;
 
 public interface IProducts
 {

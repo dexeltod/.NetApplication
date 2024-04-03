@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.DomainInterfaces", "Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Domain", "Shop.Domain\Shop.Domain.csproj", "{A42AF185-5B34-496E-B20A-6A7F0088653F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.ControllerInterfaces", "Shop.ControllerInterfaces\Shop.ControllerInterfaces.csproj", "{E0950F95-CB8D-402E-980A-94B1F8C939B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{A42AF185-5B34-496E-B20A-6A7F0088653F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A42AF185-5B34-496E-B20A-6A7F0088653F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A42AF185-5B34-496E-B20A-6A7F0088653F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0950F95-CB8D-402E-980A-94B1F8C939B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0950F95-CB8D-402E-980A-94B1F8C939B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0950F95-CB8D-402E-980A-94B1F8C939B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0950F95-CB8D-402E-980A-94B1F8C939B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,26 +1,24 @@
-using ClassLibrary1.Domain;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Services;
+using Shop.ServicesInterfaces;
+using WebApplication2.Models;
 
-namespace WebApplication2.Controllers;
+namespace WebApplication2.Controllers.Products.Api;
 
 [ApiController] [Route("api/products")]
-public class ProductsApiController : ControllerBase
+public class ProductsApiController(IProductsRepository productsRepository) : ControllerBase
 {
-	private readonly IProductsRepository _productsRepository;
-
-	public ProductsApiController(IProductsRepository productsRepository) =>
-		_productsRepository = productsRepository ?? throw new ArgumentNullException(nameof(productsRepository));
+	private readonly IProductsRepository _productsRepository
+		= productsRepository ?? throw new ArgumentNullException(nameof(productsRepository));
 
 	[HttpGet]
 	public async Task<List<Product>> GetAll()
 	{
-		var products = await _productsRepository.GetAll();
+		List<Product> products = await _productsRepository.GetAll();
 		Ok();
 		return products;
 	}
 
 	[HttpPost]
-	public async Task PostOneProduct() =>
-		await _productsRepository.Add(new Product(Guid.NewGuid(), "test", 3, "das"));
+	public async Task Add(Product product) =>
+		await _productsRepository.Add(product);
 }

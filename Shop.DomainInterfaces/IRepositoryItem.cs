@@ -1,3 +1,3 @@
-namespace Shop.Services;
+namespace Shop.DomainInterfaces;
 
 public interface IRepositoryItem { }

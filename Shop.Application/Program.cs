@@ -1,41 +1,89 @@
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.EntityFrameworkCore;
-using Shop.DataBase;
 using Shop.Services;
-using WebApplication2.Controllers;
+using Shop.Services.Repositoryes;
+using Shop.ServicesInterfaces;
+using WebApplication2.Controllers.Products.Api;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace WebApplication2;
 
-string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<ProductsContext>(options => options.UseSqlServer(connection));
-
-builder.Services.AddControllersWithViews();
-builder.Services.AddControllers();
-
-builder.Services.AddTransient<IProductsRepository, ProductsRepository>();
-builder.Services.AddTransient<ProductsApiController>();
-
-var app = builder.Build();
-
-if (!app.Environment.IsDevelopment())
+public class Program
 {
-	app.UseExceptionHandler("/Home/Error");
-	app.UseHsts();
-	app.UseSwaggerUI();
+	public static void Main(string[] args)
+	{
+		WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+		string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
+		EnableCorsAttribute enableCorsAttribute = new();
+		builder.Services.AddScoped<NewsRepository>();
+		builder.Services.AddScoped<UserRepository>();
+		builder.Services.AddDbContext<WebApplicationContext>(options => options.UseSqlServer(connection));
+
+		builder.Services.AddControllers();
+		builder.WebHost.UseStaticWebAssets();
+		builder.Services.AddFluentValidationAutoValidation();
+		builder.Services.AddTransient<IProductsRepository, ProductsRepository>();
+		builder.Services.AddTransient<ProductsApiController>();
+		
+		builder.Services.AddCors(options =>
+		{
+			options.AddPolicy("AllowOrigin",
+				a =>
+				{
+					a.AllowAnyOrigin()
+						.AllowAnyMethod()
+						.AllowAnyHeader();
+				});
+		});
+		
+		
+		// builder.Services.Configure<CookiePolicyOptions>(
+		// 	options =>
+		// 	{
+		// 		options.MinimumSameSitePolicy = SameSiteMode.Lax;
+		//
+		// 		options.OnAppendCookie = cookieContext =>
+		// 			CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
+		// 		options.OnDeleteCookie = cookieContext =>
+		// 			CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
+		// 	}
+		// );
+		var app = builder.Build();
+
+		if (!app.Environment.IsDevelopment())
+		{
+			app.UseHsts();
+			app.UseSwaggerUI();
+		}
+		app.UseCors("AllowOrigin");
+		app.UseHttpsRedirection();
+		app.UseStaticFiles();
+
+		app.UseRouting();
+		
+		app.UseAuthorization();
+
+		app.MapControllers();
+
+		app.Run();
+	}
+
+	private static void CheckSameSite(HttpContext httpContext, CookieOptions options)
+	{
+		if (options.SameSite != SameSiteMode.None)
+			return;
+
+		var userAgent = httpContext.Request.Headers.UserAgent.ToString();
+
+		if (IsKnownBrowser(userAgent))
+			options.SameSite = SameSiteMode.Unspecified;
+		else
+			options.SameSite = SameSiteMode.Lax;
+	}
+
+	private static bool IsKnownBrowser(string userAgent) =>
+		userAgent.Contains("Chrome") || userAgent.Contains("Firefox") ||
+		userAgent.Contains("Safari") || userAgent.Contains("Opera") ||
+		userAgent.Contains("Edge") || userAgent.Contains("IE");
 }
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-	name: "default",
-	pattern: "{controller=Home}/{action=Index}/{id?}"
-);
-
-app.MapControllers();
-
-app.Run();

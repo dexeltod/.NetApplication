@@ -1,8 +1,5 @@
-using ClassLibrary1.Domain;
+using WebApplication2.Models;
 
-namespace Shop.Services;
+namespace Shop.ServicesInterfaces;
 
-public interface IProductsRepository : IRepository<Product>
-{
-	
-}
+public interface IProductsRepository : IRepository<Product> { }
